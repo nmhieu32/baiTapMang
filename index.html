@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex justify-center">
+    <div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-2xl">
+        <h1 class="text-2xl font-bold text-center mb-4">Array Functions</h1>
+
+        <div class="mb-4">
+            <label class="block text-gray-700">Nhập số nguyên:</label>
+            <div class="flex justify-center item-center space-x-2">
+                <input type="text" id="arrayInput"
+                    class="mt-2 w-[75%] p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Ví dụ: 1, -2, 3, 4" />
+                <button onclick="addNumber()" id="addNumber"
+                    class="w-[25%] bg-blue-500 mt-2 text-white p-2 rounded-lg hover:bg-blue-600">Thêm số</button>
+            </div>
+            <div id="inMang" class="mt-4 text-green-600 font-semibold"></div>
+        </div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button onclick="tongDuong()" id="tongDuong"
+                class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">1. Tổng các số dương trong
+                mảng</button>
+        </div>
+
+        <div id="inTongDuong" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="demDuong" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">2. Đếm các số
+                dương trong
+                mảng</button>
+        </div>
+
+        <div id="inDemDuong" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="min" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">3. Tìm số nhỏ nhất
+                trong
+                mảng</button>
+        </div>
+
+        <div id="inMin" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="minDuong" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">4. Tìm số
+                dương nhỏ nhất trong
+                mảng</button>
+        </div>
+
+        <div id="inMinDuong" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="chanCuoi" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">5. Tìm số chẵn
+                cuối cùng trong
+                mảng</button>
+        </div>
+
+        <div id="inChanCuoi" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="doiCho" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">6. Đổi
+                chỗ</button>
+        </div>
+        <input type="text" id="viTri1"
+            class="mt-2 w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Vị trí 1 ( 0,... )" />
+        <input type="text" id="viTri2"
+            class="mt-2 w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Vị trí 2 ( 0,... )" />
+        <div id="inDoiCho" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="tangDan" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">7. Sắp xếp tăng dần</button>
+        </div>
+
+        <div id="inTangDan" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="soNguyenTo" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">8. Số nguyên tố đầu tiên</button>
+        </div>
+
+        <div id="inSoNguyenTo" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="demSoNguyen" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">9. Đếm số nguyên</button>
+        </div>
+
+        <div id="inSoNguyen" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+        <hr class="my-4 text-gray-400">
+
+        <div class="space-y-3">
+            <button id="soSanh" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">10. So sánh số âm và dương</button>
+        </div>
+
+        <div id="inSoSanh" class="my-4 text-lg font-semibold text-blue-600"></div>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
